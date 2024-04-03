@@ -13,6 +13,7 @@ import time
 sample_data = pd.read_table('human_data.txt')
 st.subheader('This is how the data should look.')
 st.write(sample_data.head())
+st.link_button('Get sample data', url='https://github.com/Astroficboy/dna-analysis-web-app/edit/main')
 #file uploader
 file = st.file_uploader('Upload .txt or .csv', type=['txt', 'csv'])
 data = pd.DataFrame(columns=['sequence'])
